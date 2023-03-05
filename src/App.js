@@ -108,12 +108,13 @@ function evaluate({currentOp, prevOp, operation}) {
       break
     case "-":
       computation = prev - current
+      break
     case "/":
       computation = prev / current
+      break
     case "*":
       computation = prev * current
-    case "-":
-      computation = prev - current
+      break
   }
   return computation.toString()
 }
